@@ -1,0 +1,53 @@
+:root {
+  background:gray;
+--logowidth: 250px;
+--logoheight: 250px;
+--windowswidth:190px;
+--windowsheight:130px;
+--windowcolor: white;
+}
+
+.logo {
+  width: var(--logowidth);
+  height: var(--logoheight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background: #55aaff;
+  border: 5px solid #55aaff;
+  border-radius: 200px;
+  perspective: 600px;
+  margin:auto;
+  transition-duration: .5s;
+}
+
+.logo:hover {
+  background: #3377ff;
+  border-color:#3377ff;
+}
+.logo:active {
+  transform:scale(1.1);
+}
+.windows {
+  width: var(--windowswidth);
+  height: var(--windowsheight);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%
+    100%;
+  transform: rotateY(-40deg) translate(-13px);  
+}
+.window {
+   background: var(--windowcolor);
+   margin-left: 6px;
+   margin-bottom: 5px;
+}
+.text {
+  margin-top:5px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size:24px;
+  color:white;
+
+}
